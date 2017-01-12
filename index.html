@@ -23,10 +23,8 @@
       background-color: #009587;
       font-style: bold;
       font-family: sans-serif; 
-
-
-      
     }
+   
 
      li:hover {
     background-color: #00786a;
@@ -58,7 +56,7 @@
 
         .contain{
 
-          padding-left: : 20%;
+          padding-left: 20%;
           padding-right: 20%;
         }
 
@@ -70,43 +68,50 @@
           background-color: #009587;
 
    }
+
+    .btn{ 
+    padding: 10px 50px;
+    font-size:20px;
+    background-color: #ffc006;
+    border-radius: 24px;
+    width:80%;
+    margin:auto;
+}
 @media only screen and (max-width: 760px) {
    
-   .btn-xl{
-
-    background-color: #009587;
+   .btn{
      margin: auto;
      padding-top: 5%;
      padding-bottom: 5%;
+     background-color: #ffc006;
+     font-size:16px;
+     width:100%;
    }
 }
-   .btn-xl { 
-    padding: 10px 50px;
-    font-size: 16px;
-    background-color: #ffc006;
-    border-radius: 24px;
-    width:100%;
-}
 
- @media only screen and (max-width: 760px) {
-    .footer {
-         background-color: #00786a;
-         display:none;
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer {
+height: 4em;
+background-color: #00786a;
+}
+.list:hover{
+      background-color:#009587;
+      
     }
-}
-   
-
-   .footer {
-
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #00786a;
- 
-  }
-
+ .push {
+   height:4em;
+ }
 
     /* On small screens, set height to 'auto' for sidenav and grid */
    @media all and (min-width: 240px) and (max-width: 850px) {
@@ -123,7 +128,7 @@
   </style>
 </head>
 <body >
-
+<div class=wrapper>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -140,7 +145,7 @@
      
       <ul class="nav navbar-nav navbar-right">
        
-    <li> <a href="https://github.com/Print-Hen/printHen" target="_blank"  > <strong style="color:white;font-size:17px">Contact Devs</strong></a></li>
+    <li> <a href="mailto:raghuram8892@gmail.com,deepu730@gmail.com?subject=Printhen Query"><strong style="color:white;font-size:20px">Contact Devs</strong></a></li>
     <li> <a href="https://github.com/Print-Hen/printHen/wiki" target="_blank" > <strong style="color:white;font-size: 18px"> Docs</strong></a></li>
  
       </ul>
@@ -171,12 +176,12 @@
         
   
      <div class="col-sm-5">
-      <a href="https://github.com/Print-Hen/printHen" target="_blank"> <button class="btn-xl" >  Fork us on Github   </button> </a>  
+      <a href="https://github.com/Print-Hen/printHen" target="_blank"> <button class="btn" >Fork us</button> </a>  
     </div>
    <div class="col-sm-2">
    </div>
     <div class="col-sm-5"> 
-       <a href="http://104.198.119.37/img/07012017_printhen.img.lrz" target="_blank"><button class="btn-xl" >  Download</button> </a> 
+       <a href="http://104.198.119.37/img/07012017_printhen.img.lrz" target="_blank"><button class="btn" >Download</button> </a> 
    
     </div>
    
@@ -186,31 +191,29 @@
    </div>
 </div>
 </div>
+</div>
+
+<div class="push">
+  </div>
 
 
-
-<div class="footer">
+<nav class="footer navbar-inverse">
 
 
     <div class="navbar-header">
-     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-  
+     
  
       <img src="1 top left logo.png" class="navbar-brand" />
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse">
      
-      <ul class="nav navbar-nav navbar-right">
-          <li> <a href="https://github.com/Print-Hen/printHen" target="_blank"  > <strong style="color:white;font-size: 18px">Contact Devs</strong></a></li>
-    <li> <a href="https://github.com/Print-Hen/printHen/wiki" target="_blank" > <strong style="color:white;font-size: 20px"> Docs</strong></a></li>
+      <ul class="nav navbar-nav  navbar-right">
+          <li class="list"> <a href="mailto:raghuram8892@gmail.com,deepu730@gmail.com?subject=Printhen Query"><strong style="color:white;font-size:20px">Contact Devs</strong></a></li>
+    <li class="list"> <a href="https://github.com/Print-Hen/printHen/wiki" target="_blank" > <strong style="color:white;font-size: 20px"> Docs</strong></a></li>
  
       </ul>
     </div>
-</div>
+</nav>
  
 </body>
 </html>
